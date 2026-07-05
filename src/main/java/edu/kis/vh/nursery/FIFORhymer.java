@@ -6,6 +6,9 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
 
     @Override
     public int countOut() {
+        // TODO: wymaga refaktoryzacji - zlozonosc O(n) przy kazdym wywolaniu countOut(),
+        // rozwazyc prostsza implementacje kolejki (obecne podwojne przekladanie
+        // elementow miedzy stosami przy kazdym wywolaniu jest nieefektywne)
         while (!callCheck())
             temp.countIn(super.countOut());
 

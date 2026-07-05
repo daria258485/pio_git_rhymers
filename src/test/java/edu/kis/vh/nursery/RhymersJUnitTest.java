@@ -1,3 +1,6 @@
+// Wszystkie testy jednostkowe przechodzą poprawnie
+
+
 package edu.kis.vh.nursery;
 
 import org.junit.Assert;
